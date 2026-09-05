@@ -1439,33 +1439,37 @@ h1, h2, h3, h4 { overflow-wrap: break-word; }
 .socials--inline a {
   width: 44px; height: 44px;
   border-radius: 12px;
-  border: 1px solid var(--line);
+  border: none;
   display: grid; place-items: center;
-  color: var(--text-dim);
+  color: #FFFFFF;
   transition: all .3s var(--ease);
 }
 .socials--inline a:hover { transform: translateY(-3px); }
-.socials--inline a[aria-label="Instagram"]:hover {
-  border-color: transparent;
-  color: #FFFFFF;
+
+.socials--inline a[aria-label="Instagram"] {
   background: linear-gradient(100deg, #F58529 0%, #DD2A7B 40%, #8134AF 75%, #515BD4 100%);
+}
+.socials--inline a[aria-label="Instagram"]:hover {
   box-shadow: 0 8px 20px rgba(221, 42, 123, 0.35);
 }
+
+.socials--inline a[aria-label="Facebook"] {
+  background: #1877F2;
+}
 .socials--inline a[aria-label="Facebook"]:hover {
-  border-color: #1877F2;
-  color: #1877F2;
-  background: rgba(24, 119, 242, 0.12);
-  box-shadow: 0 8px 20px rgba(24, 119, 242, 0.25);
+  box-shadow: 0 8px 20px rgba(24, 119, 242, 0.35);
+}
+
+.socials--inline a[aria-label="LinkedIn"] {
+  background: #0A66C2;
 }
 .socials--inline a[aria-label="LinkedIn"]:hover {
-  border-color: #0A66C2;
-  color: #0A66C2;
-  background: rgba(10, 102, 194, 0.12);
-  box-shadow: 0 8px 20px rgba(10, 102, 194, 0.25);
+  box-shadow: 0 8px 20px rgba(10, 102, 194, 0.35);
+}
+
+.socials--inline a[aria-label="TikTok"] {
+  background: #000000;
 }
 .socials--inline a[aria-label="TikTok"]:hover {
-  border-color: #FFFFFF;
-  color: #FFFFFF;
-  background: rgba(255, 255, 255, 0.10);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
